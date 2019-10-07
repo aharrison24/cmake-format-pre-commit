@@ -15,3 +15,17 @@ Add this to your `.pre-commit-config.yaml`:
       hooks:
         - id: cmake-format
           args: [--in-place]
+
+
+### Repository maintenance
+When a new version of cmake_format is released, this repo needs a new commit
+with a corresponding tag. This is done with the `bumpversion` app, which is
+easily obtained through `pip`:
+```bash
+pip3 install bumpversion
+```
+
+Generate a new commit and tag by calling bumpversion like this:
+```bash
+bumpversion --new-version 0.5.5 major
+```
