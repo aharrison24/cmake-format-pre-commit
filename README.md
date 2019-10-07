@@ -11,7 +11,7 @@ For cmake_format: see https://github.com/cheshirekow/cmake_format
 Add this to your `.pre-commit-config.yaml`:
 
     - repo: https://github.com/aharrison24/cmake-format-pre-commit.git
-      rev: 'v0.3.3' # Use the sha / tag you want to point at
+      rev: 'v0.3.4' # Use the sha / tag you want to point at
       hooks:
         - id: cmake-format
           args: [--in-place]
