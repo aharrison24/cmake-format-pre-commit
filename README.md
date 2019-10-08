@@ -16,6 +16,13 @@ Add this to your `.pre-commit-config.yaml`:
         - id: cmake-format
           args: [--in-place]
 
+### Tool versions
+
+`pre-commit` uses a python library called `identify` to detect cmake files on which to run `cmake_lint`. CMake support was added to `identify` in version 1.4.6, so it's important you have at least that. You can do that from `pip` with a command like:
+
+```bash
+pip3 install "identify>=1.4.6"
+```
 
 ### Repository maintenance
 When a new version of cmake_format is released, this repo needs a new commit
